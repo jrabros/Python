@@ -1,0 +1,6 @@
+frase = input('Digite uma frase: ').strip()
+c = frase.lower().count('a')
+print(c)
+p = frase.lower().find('a')
+u = frase.lower().rfind('a')
+print(f'primeira posição {p} / ultima posição {u}')
