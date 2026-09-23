@@ -13,8 +13,7 @@ palavras = (
     'Apetite',
 )
 for palavra in palavras:
-    print()
-    print(f'Na palavra {palavra.upper()} temos ', end=' ')
+    print(f'\nNa palavra {palavra.upper()} temos ', end=' ')
     for letra in palavra:
-        if letra in "AEIOUaeiou":
+        if letra.lower() in "aeiou":
             print(letra.lower(), end=' ')
