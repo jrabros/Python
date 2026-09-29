@@ -19,7 +19,18 @@ for i in jogador.keys():
     print(f'{i:<15}', end=' ')
 print()
 for k, v in enumerate(jogadores):
-    print(f'{k:>3} ', end=' ')
+    print(f'{k:>3}', end=' ')
     for d in v.values():
-        print(f'{str(d):<15}', end='')
+        print(f'{str(d):<15}', end=' ')
     print()
+while True:
+    opc = int(input('Qual jogador você quer ver o detalhes? '))
+    if opc == 999:
+        break
+    elif opc > len(jogadores) - 1:
+        print(f'Não existe jogador cadastro com o cod {opc} ')
+    else:
+        print(f'LEVANTAMENTO DO JOGADOR {jogadores[opc]["nome"].upper()}')
+        for i, g in enumerate(jogadores[opc]['gols']):
+            print(f'    No jogo {i} fez {g} gols.')
+
