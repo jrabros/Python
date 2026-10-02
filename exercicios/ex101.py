@@ -9,4 +9,4 @@ def eleitor(ano_nascimento):
         print(f'Com {idade} anos. VOTO OPICIONAL')
 
 nasc = int(input(('Em que ano você nasceu? ')))
-idade = eleitor(nasc)
+eleitor(nasc)
